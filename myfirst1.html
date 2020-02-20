@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First HTML document</title>
+    <meta charset="utf-8">
+    <meta name="description" content="first CNT132 page">
+    
+    <style>
+        * {font-style: italic;}
+        
+        #top {
+            text-align: center;
+            font-style: normal;
+            color: red;
+        }
+        
+        
+        section h2 {
+                text-align: center;
+                color: green;
+        }
+        
+        h2 {color: blue;}
+        
+        .bigger {font-size: 2em;
+                 color:aqua;}
+        
+        ol li {list-style-type: upper-alpha;}
+        
+        img[src ~=".jpg"] {border:3px solid red;}
+        
+        p::first-letter {
+            font-style: normal;
+            font-weight: bold;
+            font-size:  = 3em;
+            color: darkmagenta;
+            font-style: normal;
+            
+        }
+        
+        a:link {color:red;}
+        a:visited {color:green;}
+        a:hover {background: yellow;
+            color:bluel;}
+        
+        ul li{list-style-type: square;}
+        
+    </style>
+<!-- <link href="myfirst.css" rel="stylesheet"> -->
+    
+   
+</head>
+<body>
+    <h1 id="top">My top heading</h1>
+    <h2>My first <br> HTML document</h2> 
+    
+    <section>
+        <h2>Heading inside section</h2>
+    </section>
+    <ol reversed>
+        <!-- style="list-style-type:upper-alpha;"> -->
+        <li>CNT 131
+            <ul>
+                <li>CNT 131H</li>
+                <li>CNT 131</li>
+            </ul>
+        </li>
+        <li>CNT 132</li>
+        <li>CNT 133</li>
+    </ol>
+    <dl id="glossary">
+    <dt>RAM</dt>
+        <dd>Random Access Memory</dd>
+        <dt>CPU</dt>
+        <dd>Central Processing Unit</dd>
+    </dl>    
+        <p>This is an image of an <span class="bigger">old boat </span><img src="oldboat.gif" alt="old boat in cartoon format"></p>
+        <p>This is a nice image for fall <img src="fall.jpg" alt=" trees during fall"></p>    
+        <p>Adding another image <img src="computer.jpg" alt=" Computer style"></p>
+    
+    <p>This link will take you to the main <a href="https://www.ccsf.edu">go to the CCSF link</a> </p>
+           
+        
+        <p><a href="#top">Go to the top</a></p>
+</body>
+    
+</html>
