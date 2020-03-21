@@ -1,0 +1,51 @@
+body {background-color: yellow; }
+
+h1 {color:red; text-align: center;}
+h3 {color:red; text-align: right;}
+
+table  {
+  width: 55%;
+  height: 10px;
+  background-color: cyan;
+  border-spacing:  20px;
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+    
+}
+@keyframes example {
+  0%   {background-color: cyan; color:black;}
+  25%  {background-color: green; color:white;}
+  50%  {background-color: cyan; color:black;}
+  100% {background-color: green; color:white;}
+ 
+}
+
+#r1, #r2, #r3 {text-align: center; font-weight: bold; }
+
+#newbox { 
+            width: 300px; height: 100px; background-color: yellow; 
+            font-weight: bold; font-size: 2em; text-align:center; line-height: 90px; position: relative; animation: banner 7s infinite alternate; box-sizing: border-box;
+            border: 10px solid red; 
+        }
+   
+@keyframes banner {
+                    from { left: 0; }
+                    to { left: calc(100% - 300px); }
+                  }
+
+p::first-letter{font-size: 3em; color: black; font-style: italic; font-weight: bold;}
+
+#using {text-align: right; color: blue; font-style: italic; font-weight: bold;}
+
+#end {font-size: 3em; text-align: right; color: blue; font-style: italic; font-weight: bold;}
+
+p > span {color:red;}
+
+/* unvisited link */
+a:link {color: blue;}
+
+/* visited link*/ 
+a:visited {color: blue;}
+
+
