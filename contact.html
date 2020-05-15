@@ -1,42 +1,149 @@
-<!--
-    Student Name: Guillermo Hernandez
-    Date: 02/17/20
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homework1</title>
-    <meta charset="utf-8">
-    <meta name="description" content="first CNT132 page">
+<title>Short Task</title>
+<meta charset="utf-8">
+<meta name="description" content="Contact RockoTech Co">
+<link rel="stylesheet" href="contact.css">
+<style>
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: palegoldenrod;
+}
+#wrapper { background-color: white; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:860px;
+} 
+#leftcolumn { 
+              float: left;
+	          width: 200px;
+} 
+#rightcolumn { margin-left: 205px;
+               background-color: white;
+               color: maroon;
+} 
+#header{ background-color: gainsboro;
+        color: darkblue; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+}
     
-    <style>
- 
-        body { background-color: lightblue;}
-        
-        h1 {
-                text-align: center;
-                color: darkblue;
-        }
-        
-        
-        li {list-style-type: upper-alpha;}
-        
-      
-        ul li{list-style-type: square;
-                font-style: normal;}
-        
-    </style>
- 
-   
+    div h1{text-align: center;}
+h2 { color: maroon; 
+     font-family: arial, sans-serif;
+}
+.content {padding: 0px 20px 0px 10px; 
+          line-height: 1.5;
+} 
+#floatright { margin: 10px;
+             float: right;
+}
+
+#footer {background-color: gainsboro;
+         font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding: 10px 10px 10px 125px;
+         color:darkblue;
+}
+    
+    #c {text-align: justify;}
+#leftcolumn a {	margin: 10px;
+                background-color: gainsboro; 
+} 
+
+    #menu ul {list-style-type: none; 
+              padding: 4;}
+    
+    #menu a {text-decoration: none;
+             color:maroon;
+             font-family: sans-serif;
+             font-size: 1em;
+             }
+    
+    #menu li { 
+             margin: 10px;
+             padding: 6px;
+             line-height: 2;
+             background-color: gainsboro; 
+             height: 35px; 
+             width: 110px;
+             border-radius: 5px;
+             text-align: center;}
+    
+</style> 
 </head>
 <body>
-    <h1 id="top">Contact</h1>
+<div id="wrapper">
+  <div id="header">
+      <h1>RockoTech</h1>
+    </div>
+    <div id="leftcolumn">
     
-    <ul> 
-        <li><a href="homework1.html">Home</a></li>
-        <li><a href="homework2.html">Homework 2</a></li>
-        <li><a href="meetup.html">MeetUp</a></li>
-    </ul>
+      <div id="menu">
+          <ul>
+            <li><a href="homework1.html">Home</a></li>
+            <li><a href="homework2.html">Homework 2</a></li>
+            <li><a href="short_task.html">Short task</a></li>
+            <li><a href="meetup.html">MeetUp</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+  <div id="rightcolumn">
+    <div class="content"> 
+      
+	<h2>Have a question about one of our products?</h2>
+    <p>You can call us 9:00 AM to 5:00 PM or fill out the form below.</p>
+    <fieldset id="c">
+        <legend>Contact Us</legend>
+        <p>
+            Please feel free to reach out with your feedback, questions or comments. We’re here to help in any way we can.</p>
+    </fieldset>
+    <p> 
+    <br />
+    San Francisco Office // 415 775 1234
+    <br />    
+    San Francisco Conferences // 415 373 5000
+    <br />
+    San Jose Office // 650 123 4321
+    <br />
+    San Jose IT Department // 650 554 1230
+    <br />
+    Career Opportunities // jobs@RockoTech.com
+    </p>
+    <hr />
+    <form action="https://guillerocko1.github.io/homework1.html" method="get">
+        <fieldset>
+            <legend>Enter your personal information</legend>
+            <p>
+                <label class="title" for="name">Name: </label>
+                <input type="text" name="name" id="name" required="required"> <br />
+                <label class="title" for="name">LastName: </label>
+                <input type="text" name="lastname" id="lastname" required="required"> <br />
+                <label class="title" for="email">Email: </label>
+                <input type="text" name="email" id="email"> <br />
+            </p>
+            <p>
+                <label for="comments">
+                    Comments:
+                </label>
+                <br />
+                <textarea rows="4" cols="40" id="comments">
+                </textarea>
+            </p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="register" /></div>
+    </form>
+    </div>
+  </div>
+    <div id="footer">Copyright &copy; 2020 RockoTech All rights reserved
+    </div>
+</div>
 </body>
-    
 </html>
+
+

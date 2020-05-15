@@ -1,49 +1,119 @@
-<!--
-    Student Name: Guillermo Hernandez
-    Date: 02/17/20
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Homework1</title>
-    <meta charset="utf-8">
-    <meta name="description" content="first CNT132 page">
+
     
-    <style>
- 
-        body { background: url('trilliumfoot.gif') lightblue no-repeat center fixed; }
-        
-        h1, h2 {
-                text-align: center;
-                color: darkblue;
-        }
-        
-        .bigger {font-size: 2em;
-                 color:aqua;}
-        
-        li {list-style-type: upper-alpha;}
-        
-      
-        ul li{list-style-type: square;
-                font-style: normal;}
-        
-    </style>
- 
-   
+<title>Short Task</title>
+<meta charset="utf-8">
+
+<style>
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: palegoldenrod;
+}
+#wrapper { background-color: white; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:860px;
+} 
+#leftcolumn { 
+              float: left;
+	          width: 200px;
+} 
+#rightcolumn { margin-left: 205px;
+               background-color: white;
+               color: maroon;
+} 
+#header{ background-color: gainsboro;
+        color: darkblue; 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+}
+    
+    div h1{text-align: center;}
+h2 { color: maroon; 
+     font-family: arial, sans-serif;
+}
+.content {padding: 0px 20px 0px 10px; 
+          line-height: 1.5;
+} 
+#floatright { margin: 10px;
+             float: right;
+}
+
+#footer {background-color: gainsboro;
+         font-size:70%;
+         text-align: center;
+		 clear: right;
+         padding: 10px 10px 10px 125px;
+         color:darkblue;
+}
+    
+
+#leftcolumn a {	margin: 10px;
+                background-color: gainsboro; 
+} 
+
+    #menu ul {list-style-type: none; 
+              padding: 4;}
+    
+    #menu a {text-decoration: none;
+             color:maroon;
+             font-family: sans-serif;
+             font-size: 1em;
+             }
+    
+    #menu li { 
+             margin: 10px;
+             padding: 6px;
+             line-height: 2;
+             background-color: gainsboro; 
+             height: 35px; 
+             width: 110px;
+             border-radius: 5px;
+             text-align: center;}
+    
+</style> 
 </head>
 <body>
-    <h1 id="top">CNIT 132-Intermediate HTML and CSS</h1>
+<div id="wrapper">
+  <div id="header">
+      <h1>RockoTech</h1>
+    </div>
+    <div id="leftcolumn">
     
-    <h2>Assignments</h2>
-    
-    
-    <ul>
+      <div id="menu">
+          <ul>
+            <li><a href="homework1.html">Home</a></li>
+            <li><a href="homework2.html">Homework 2</a></li>
+            <li><a href="short_task.html">Short task</a></li>
+            <li><a href="meetup.html">MeetUp</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  
+  <div id="rightcolumn">
+    <div class="content"> 
+      <!-- <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island"> -->
+	<h2>Assignments</h2>
+    <tr>
+        <td><img src="images/homework2.png" weidth="200" height="150" alt="Homework 2" /></td>
+        <td class="description">Modify the code of the page using HTML5 and and external CSS to format the page maintaining the original layout format - NOTHING SHOULD CHANGE FROM THE ORIGINAL LAYOUT.
+        The idea is that the HTML document will be cleaner without any of those deprecated tags and/or attributes as they will be moved to the CSS part with the appropriate selectors and properties. When creating the CSS think about future maintenance - for example, do not use pseudo-classes based on the position of elements in the page as this will complicate maintenance if elements need to be inserted between existing elements!</td>
+        <td><img src="images/short_task.png" weidth="200" height="150" alt="Short_task" /></td>
+        <td class="description">Modify the code of the page using HTML5 and and external CSS to format the page maintaining the original layout format - NOTHING SHOULD CHANGE FROM THE ORIGINAL LAYOUT.
+        The idea is that the HTML document will be cleaner without any of those deprecated tags and/or attributes as they will be moved to the CSS part with the appropriate selectors and properties. When creating the CSS think about future maintenance - for example, do not use pseudo-classes based on the position of elements in the page as this will complicate maintenance if elements need to be inserted between existing elements!</td>
+    </tr>
+    <p>Computer training </p>
         
-        <li><a href="homework1.html">Home</a></li>
-        <li><a href="homework2.html">Homework 2</a></li>
-        <li><a href="meetup.html">MeetUp</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    </div>
+  </div>
+    <div id="footer">Copyright &copy; 2020 RockoTech All rights reserved
+    </div>
+</div>
 </body>
-    
 </html>
+
+
