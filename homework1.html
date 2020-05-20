@@ -7,30 +7,59 @@
 <meta charset="utf-8">
 
 <style>
-body {font-family:Verdana, Arial, sans-serif;
-      background-color: palegoldenrod;
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 0px;
+  background-color: #2196F3;
+  padding: 0px;
+  margin: 25px auto;
+  width: 800px;
+  height: auto;
+  min-width:860px;
 }
-#wrapper { background-color: white; 
-           color: #000066;
-           width: 80%;
-		   margin: auto;
-           min-width:860px;
-} 
-#leftcolumn { 
-              float: left;
-	          width: 200px;
-} 
-#rightcolumn { margin-left: 205px;
-               background-color: white;
-               color: maroon;
-} 
-#header{ background-color: gainsboro;
-        color: darkblue; 
-        font-size: 150%; 
-        padding: 10px 10px 10px 155px;
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
     
-    div h1{text-align: center;}
+    .item1{
+        background-color:gainsboro;
+        height: 80px;
+    }
+    
+    .item2{
+        background-color: white;
+    }
+    
+    .item3{
+        background-color: white;
+    }
+    
+    .item4{
+        background-color: gainsboro;
+    }
+    
+/*******************************************/
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: white;
+}
+
+div h1{text-align: center;}
 h2 { color: maroon; 
      font-family: arial, sans-serif;
 }
@@ -54,22 +83,22 @@ h2 { color: maroon;
                 background-color: gainsboro; 
 } 
 
-    #menu ul {list-style-type: none; 
-              padding: 4;}
+    .item2 #menu ul {list-style-type: none; 
+              padding: 3;}
     
-    #menu a {text-decoration: none;
+    .item2  #menu a {text-decoration: none;
              color:maroon;
              font-family: sans-serif;
-             font-size: 1em;
+             font-size: 0.5em;
              }
     
-    #menu li { 
+    .item2 #menu li { 
              margin: 10px;
-             padding: 6px;
-             line-height: 2;
+             padding: 4px;
+             line-height: 1;
              background-color: gainsboro; 
              height: 35px; 
-             width: 110px;
+             width: 120px;
              border-radius: 5px;
              text-align: center;}
     
@@ -77,18 +106,12 @@ h2 { color: maroon;
 /*******************************************/
 
  /* Apply the color darkblue to the elements h1 h2 and h3*/
-        h1, h2, h3 {color: maroon;}
+        h1, h2, h, h4 {color: maroon;}
         
-        
-        #top {
-            text-align: center;
-            font-style: normal;
-            color: red;
-        }
         
         img{
-            width: 15%;
-            margin: 1px auto;
+            width: 25%;
+            margin:  auto;
             display: block;
             border: maroon;
             margin-top: 10px;
@@ -97,22 +120,18 @@ h2 { color: maroon;
             
         }
         
-        ul, p{
+        ul, p {
             line-height: 25px;
+            font-size: 15px;
+            text-align: justify;
         }
-        
-        section h2 {
-                text-align: center;
-                color: maroon;
-        }
-        
-        
-        
-        .bigger {font-size: 2em;
-                 color:aqua;}
-        
+    
         p, li{
             color: maroon;;
+        }
+        
+        li {
+            font-size: 30px;
         }
         
         ol li {list-style-type: upper-alpha;}
@@ -127,20 +146,18 @@ h2 { color: maroon;
             
         }
         
-        
-
 /******************************************/
     
 </style> 
 </head>
 <body>
-<div id="wrapper">
-  <div id="header">
-      <h1>RockoTech</h1>
-    </div>
-    <div id="leftcolumn">
     
-      <div id="menu">
+<div class="grid-container">
+  <div class="item1">
+    <h2>FINAL PROJECT</h2>
+  </div>
+  <div class="item2">
+    <div id="menu">
           <ul>
             <li><a href="homework1.html">Home</a></li>
             <li><a href="homework2.html">Homework 2</a></li>
@@ -149,15 +166,10 @@ h2 { color: maroon;
             <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-  
-    </div>
-  
-  <div id="rightcolumn">
-    <div class="content"> 
-      <!-- <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island"> -->
-	
+  </div>
+  <div class="item3">
     <img src="mypicture.jpg" alt="my picture"/><br>
-        <h3>About me</h3>
+        <h4>About me</h4>
         <p> My name is Guillermo Hernandez, I've been in the US from five years ago. I consider my personality 
             as a friendly, honest and easy going person. I'm very ambitious and passionate about my goals. It makes me happy 
             to be learning all the time about technology, because I think is the way I can grow as a professional to beat my limits 
@@ -166,14 +178,14 @@ h2 { color: maroon;
             I like sports like basketball, tennis and soccer. Finally I love the Chinesse and philippine food.
             </p>
         <hr>
-        <h3>My background in the web development field</h3>
+        <h4>My background in the web development field</h4>
         <p>To learn about web development has been one of my goals in my life, even though I have background in software development, 
            coding with different programming langauges, it's my first time developing with html and css. It's one of the reasons why 
            I am very excited about this class, because I have the opportunity to combine different technologies like html and css in 
             order to design professional web sites.
             </p>
         <hr> 
-        <h3>Information about Counseling Services</h3>
+        <h4>Information about Counseling Services</h4>
             <p>There are several <a href="http://www.ccsf.edu/en/student-services/student-counseling.html#llinks" target="_blank" rel="noopener">counseling departments</a> 
             available at City College of San Francisco. 
             The counselors in these various departments are all part of a COUNSELING TEAM and are all here 
@@ -186,24 +198,36 @@ h2 { color: maroon;
             </p>
         
         <hr>
-        <h2>"Good Links"</h2> 
+        <h4>"Good Links"</h4> 
     <ul>
+          <table style="width:100%">
+              <tr>
+                <th>Links</th>
+                <th>Description</th> 
+              </tr>
+              <tr>
+                <td><a href="https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/">Pseudo Classes and Pseudo Elements</a></td>
+                <td><p>:  This link contains all the information about how to apply different kind of modifications to the                   classes, syntax and examples.
+                          that allow to understand the code.
+                </p></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.creativebloq.com/inspiration/css-animation-examples">CSS Animation</a></td>
+                  <td><p>The animation link shows different kind of animation that we can apply to our web sites in order to make it looks more proffesional.</p></td>
+              </tr>
+              <tr>
+                <td><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a></td>
+                  <td><p>w3schools is an excelent website to find examples about html and css, its very clear the way this web seite presents examples about each function.</p></td>
+
+              </tr>
+        </table>
         
-        <li><a href="https://www.smashingmagazine.com/2016/05/an-ultimate-guide-to-css-pseudo-classes-and-pseudo-elements/">Pseudo Classes and Pseudo Elements</a>
-            :  This link contains all the information about how to apply different kind of modifications to the classes, syntax and examples.
-            that allow to understand the code.</li>
-        <li><a href="https://www.creativebloq.com/inspiration/css-animation-examples">CSS Animation</a>
-        :  The animation link shows different kind of animation that we can apply to our web sites in order to make it looks more proffesional.</li>
-        <li><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a>
-            :  w3schools is an excelent website to find examples about html and css, its very clear the way this web seite presents examples about each function.</li>
+        
     </ul>
     <hr>
-    </div>
-  </div>
-    <div id="footer">Copyright &copy; 2020 RockoTech All rights reserved
-    </div>
+  </div>  
+  <!-- <div class="item4">Right</div> -->
+  <div class="item4">Copyright &copy; 2020 RockoTech All rights reserved</div>
 </div>
 </body>
 </html>
-
-
