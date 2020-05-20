@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     
 <title>Short Task</title>
 <meta charset="utf-8">
 
 <style>
-body {font-family:Verdana, Arial, sans-serif;
-      background-color: palegoldenrod;
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 0px;
+  background-color: #2196F3;
+  padding: 0px;
+  margin: 25px auto;
+  width: 800px;
+  height: auto;
+  min-width:860px;
 }
-#wrapper { background-color: white; 
-           color: #000066;
-           width: 80%;
-		   margin: auto;
-           min-width:860px;
-} 
-#leftcolumn { 
-              float: left;
-	          width: 200px;
-} 
-#rightcolumn { margin-left: 205px;
-               background-color: white;
-               color: maroon;
-} 
-#header{ background-color: gainsboro;
-        color: darkblue; 
-        font-size: 150%; 
-        padding: 10px 10px 10px 155px;
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
     
-    div h1{text-align: center;}
+    .item1{
+        background-color:gainsboro;
+        height: 80px;
+    }
+    
+    .item2{
+        background-color: white;
+    }
+    
+    .item3{
+        background-color: white;
+    }
+    
+    .item4{
+        background-color: gainsboro;
+    }
+    
+    .item4 p{
+        color: maroon;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+/*******************************************/
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: white;
+}
+
+div h1{text-align: center;}
 h2 { color: maroon; 
      font-family: arial, sans-serif;
 }
@@ -41,82 +78,306 @@ h2 { color: maroon;
              float: right;
 }
 
-#footer {background-color: gainsboro;
-         font-size:70%;
-         text-align: center;
-		 clear: right;
-         padding: 10px 10px 10px 125px;
-         color:darkblue;
-}
+    .item2 #menu ul {list-style-type: none; 
+              padding: 3;}
     
-
-#leftcolumn a {	margin: 10px;
-                background-color: gainsboro; 
-} 
-
-    #menu ul {list-style-type: none; 
-              padding: 4;}
-    
-    #menu a {text-decoration: none;
+    .item2  #menu a {text-decoration: none;
              color:maroon;
              font-family: sans-serif;
-             font-size: 1em;
+             font-size: 0.5em;
              }
     
-    #menu li { 
+    .item2 #menu li { 
              margin: 10px;
-             padding: 6px;
-             line-height: 2;
+             padding: 4px;
+             line-height: 1;
              background-color: gainsboro; 
              height: 35px; 
-             width: 110px;
+             width: 120px;
              border-radius: 5px;
              text-align: center;}
     
-    img{
-            width: 35%;
-            margin: 1px auto;
+/*******************************************/
+
+ /* Apply the color darkblue to the elements h1 h2 and h3*/
+        h4 {color: maroon;}
+        
+        
+        img{
+            width: 25%;
+            margin:  auto;
             display: block;
             border: maroon;
             margin-top: 10px;
             border-bottom-width:inherit;
             border-color:maroon;
-    }
+            
+        }
+        
+        ul, p {
+            line-height: 25px;
+            font-size: 15px;
+            text-align: justify;
+        }
+        
+    
+        p, li{
+            color: maroon;;
+        }
+        
+        li {
+            font-size: 30px;
+        }
+        
+        ol li {list-style-type: upper-alpha;}
+        
+   
+        
+        p::first-letter {
+            font-style: normal;
+            font-weight: bold;
+            color: maroon;
+            font-style: normal;
+            
+        }
+        
+/******************************************/
+    
 </style> 
 </head>
 <body>
-<div id="wrapper">
-  <div id="header">
-      <h1>RockoTech</h1>
-    </div>
-    <div id="leftcolumn">
     
-      <div id="menu">
+<div class="grid-container">
+  <div class="item1">
+    <h2>MeetUp</h2>
+  </div>
+  <div class="item2">
+    <div id="menu">
           <ul>
             <li><a href="homework1.html">Home</a></li>
-            <li><a href="homework2.html">Homework 2</a></li>
-            <li><a href="short_task.html">Short task</a></li>
-            <li><a href="meetup.html">MeetUp</a></li>
+            <li><a href="assignmets.html">Assignments</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-  
-    </div>
-  
-  <div id="rightcolumn">
-    <div class="content"> 
-      <!-- <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island"> -->
-	<h2>MeetUp</h2>
-        <img src="construction.jpg" alt="Under construction"/><br>
-    <p></p>
-      
-        
-    </div>
   </div>
-    <div id="footer">Copyright &copy; 2020 RockoTech All rights reserved
-    </div>
+  <div class="item3">
+    
+        <h4>Meetup event policies and the coronavirus (COVID-19)</h4>
+        <p>
+        Updated: March 16, 2020
+
+        <br />In response to the guidelines set by the U.S. Centers for Disease Control and Prevention, advice from the World Health Organization, and to protect the health and safety of the Meetup community, we are temporarily updating our groups and events policy to permit groups to host events online. 
+
+        We advise that all events should be hosted online until there are updates from local governments concluding that it’s safe to continue meeting in person.
+
+        Resources for organizers
+        Here are some resources for supporting your community online: <a href="https://help.meetup.com/hc/en-us/articles/360040609112" target="_blank">coronavirus (COVID-19)</a>
+
+        Instructions to host an online event on Meetup
+        Best practices for hosting an online event on Meetup
+        Meetup webinar about hosting online events</p>
+    <hr />
+ 
+        <h4>Future of Living in Technology Enabled, Self-Reliant, Regenerative Neighborhoods</h4>
+      <p>
+        Thursday, May 21, 2020
+        <br />
+        Details
+        Moguls,
+
+        Every now and then you come across somebody that just blows away all conventional thinking and creates a new, better path forward. Edison, Einstein, Ford, Jobs, Musk, … I am very happy to have a very special guest for our next event, Mr. James Ehrlich
+
+        ReGen Villages is considered the "Tesla of ecovillages" - as a Stanford University spin-off company founded by James Ehrlich, creating the future of living in communities that provide critical life support systems of organic food, clean water, renewable energy and circular waste-to-resource systems at the neighborhood scale. ReGen Villages development of its VillageOS operating system software, is the first of its kind artificial intelligent/machine learning (AI/ML) software that can design, define and operate regenerative infrastructure for the benefit of long-term healthy and happy residency. The VillageOS is also the first globally connected neighborhood software platform, intended to improve and/or mitigate sentient communities across similar climate zones. ReGen Villages is positioned for the post-COVID green transition of multi-trillion Euro/Dollar investments, publishing U.N. Sustainable Development Goal platform briefs and participating in the EU Smart Rural Villages Commission on the topic of replicating and scaling decentralized residential developments.
+      </p>
+        
+    <hr>
+      <h4>EnterpriseGuy Stock Market and Investment Analysis</h4>
+      <p>
+        Sunday, May 24, 2020
+        <br />
+        A Silicon Valley alternative investment running for more than the last 3+ years.
+
+        Lecture Recordings: <a href="https://www.meetup.com/amador-valley-apartment-flipping-investors/events/sfjprrybchbgc/" target="_blank">EnterpriseGuy Stock Market and Investment Analysis</a>
+        <br/>
+        Hey everyone, my investment lectures will now be online until our world defeats the coronavirus!
+
+        Topics can range from trading stocks, investing, venture capital, real estate, private equity, global-macro, crypto-currencies, cash flow analysis, and more!
+        <br />
+        Trading Tools I Use:
+        <br />
+        • Finviz: https://finviz.com/?a=100613214
+        <br />
+        • GuruFocus: https://goo.gl/TxAFJQ
+        <br /> 
+        <br />
+        If you would like to get know me (the EnterpriseGuy) in 83 seconds, you can check out my quick commercial here at www.PaloAltoGuy.com
+        <br />  
+        Your Silicon Valley Friend,
+        Kae, the EnterpriseGuy
+        669.221.9888 (text/call anytime!)
+      </p>
+    <hr>
+      
+      
+      <h4>Data manipulation in Python using pandas</h4>
+        <p>
+        Thursday, May 21, 2020
+
+        <br />Details
+        Data manipulation in python using pandas 🐼🐼🐼
+
+            <a href="https://www.meetup.com/Women-Who-Code-SF/events/270630921/?recEventId=270630921&recNumber=2&mu_notif_category=suggested_events" target="_blank">Zoom link visible for confirmed attendees. </a>
+
+        Pandas don't refer to the cute animal but instead the python library which name derives from the econometrics term PANel DAta.
+
+        Pandas is a versatile library that's used heavily in data analysis. If you have a csv file, excel worksheet, or some other large data sheet that needs to be analyzed then this talk is for you. Learn the basics of pandas such as installing pandas and creating a data frame, then learn useful functionality such as how to apply statistics to your dataset, how to create a Microsoft styled pivot table, and various other data exploration features.
+
+        This talk will be presented from a Jupyter notebook which will be shared in the meetup comments after the presentation.
+        <br />
+        <br />
+        Author:
+        <br />
+        Doug Purcell is a 5X published author and python tutor in San Francisco. The favorite book he published is Code Cool Stuff with Python, and in pre-quarantine SF he enjoyed the views from the Salesforce Park and sipping on the Ethiopian coffee at Sextant Coffee.</p>
+    <hr />
+ 
+        <h4>JavaScript Remote Study, San Jose Coding Bootcamp</h4>
+      <p>
+        Wednesday, May 20, 2020
+        <br />
+        Details
+        We will be holding this meetup remotely indefinitely. Join us on our chat via https://c0d3.com. Staff is available for questions.
+        - Staff 3/11/2020
+
+        This is a free <a href="https://https://www.meetup.com/San-Jose-C0D3/events/phtpqrybchbbc/" target="_blank">coding bootcamp</a> to introduce the exciting world of software engineering to people who have never tried programming. The bootcamp is put on by c0d3.com (https://c0d3.com/), a nonprofit organization dedicated to bringing coding skills to more people across California. If you're looking for a career change, or just want to broaden your horizons, this is the bootcamp for you! Our organizers are self-taught programmers who started where you are, and our mentors are fellow students with a little more experience. And best of all, it's free!
+        <br />
+        For this bootcamp we use JavaScript, an incredibly beginner-friendly language that's nevertheless powerful and heavily used in the real world. In fact, if you ever open websites on your computer or phone, you're probably using JavaScript!
+        <br />
+        Here's what your journey as a student will look like:
+        <br />
+        1. Complete the c0d3.com (https://c0d3.com/) foundation lessons:
+        <br />
+        • JS0 -> JavaScript Fundamentals: variables, types of data, decisions in your code
+        <br />
+        • JS1 -> HTML & Functions: creating user interfaces, crafting functions, solving "word problems" with recursion</p>
+        
+    <hr>
+      
+      <h4>NetOps + SecOps: DemoFest II</h4>
+      <p>
+        Tuesday, June 2, 2020
+        <br />
+        A Silicon Valley alternative investment running for more than the last 3+ years.
+
+        Lecture Recordings: <a href="https://www.meetup.com/amador-valley-apartment-flipping-investors/events/sfjprrybchbgc/" target="_blank">EnterpriseGuy Stock Market and Investment Analysis</a>
+        <br/>
+        Hey everyone, my investment lectures will now be online until our world defeats the coronavirus!
+
+        Topics can range from trading stocks, investing, venture capital, real estate, private equity, global-macro, crypto-currencies, cash flow analysis, and more!
+        <br />
+        Trading Tools I Use:
+        <br />
+        • Finviz: https://finviz.com/?a=100613214
+        <br />
+        • GuruFocus: https://goo.gl/TxAFJQ
+        <br /> 
+        <br />
+        If you would like to get know me (the EnterpriseGuy) in 83 seconds, you can check out my quick commercial here at www.PaloAltoGuy.com
+        <br />  
+        Your Silicon Valley Friend,
+        Kae, the EnterpriseGuy
+        669.221.9888 (text/call anytime!)
+        </p>
+    <hr>
+      
+      
+      <h4>Workshop | Managing the Complete Machine Learning Lifecycle with MLflow: 3 of 3</h4>
+        <p>
+        Wednesday, May 20, 2020
+
+        <br />Details
+            Join us for a 3 part online technical workshop series: <a href="https://www.meetup.com/data-ai-online/events/270303478/?recEventId=270303478&recNumber=3&mu_notif_category=suggested_events" target="_blank">Managing the Complete Machine</a> Learning Lifecycle with MLflow. If you’re interested in learning about machine learning and MLflow, this workshop series is for you!
+
+        Workshop 3 of 3 | Introduction to MLflow: Model Registry Workflows Explained
+
+        Level: Beginner/Intermediate Data Scientist or ML Engineer
+
+        Details: This workshop is an introduction to MLflow. Machine Learning (ML) development brings many new complexities beyond the traditional software development lifecycle. Unlike in traditional software development, ML developers want to try multiple algorithms, tools and parameters to get the best results, and they need to track this information to reproduce work. In addition, developers need to use many distinct systems to productionize models.
+      <br />
+        What you will learn: Understand how the Model Registry helps address challenges of the ML lifecycle.<br />
+            
+        - Concepts and motivation behind Model Registry<br />
+        - Tour of the the Model Registry Documentation and APIs<br />
+        - How to use Model Registry Workflows: Model Registry UI and Model Registry API<br />
+        - How to manage, annotate, and transition models with Model Registry<br />
+        - Use Model Registry UI on the local host<br />
+        - Deploy and serve a registered model on the local host<br /> 
+
+      </p>
+    <hr />
+ 
+        <h4>Hacker Days: Detect complex code patterns using semantic grep</h4>
+      <p>
+        Thursday, May 21, 2020
+        <br />
+        Details
+        
+        Zoom details will be announced 1 hour prior to the event.
+        <br />
+        We’ll discuss a program analysis tool we’re developing called semgrep. It's a multilingual semantic tool for writing security and correctness queries on source code (for Python, Java, Go, C, and JS) with a simple “grep-like” interface. The original author, Yoann Padioleau, worked on sgrep’s predecessor, Coccinelle, for Linux kernel refactoring, and later developed sgrep while at Facebook. He’s now full time with us at r2c.
+
+        semgrep is a free open-source program analysis toolkit that finds bugs using custom analysis we’ve written and OSS code checks. semgrep is ideal for security researchers, product security engineers, and developers who want to find complex code patterns without extensive knowledge of ASTs or advanced program analysis concepts.
+        <br />
+        <br />
+          <a href="https://www.meetup.com/Bay-Area-OWASP/events/270679037/attendees/" target="_blank">Hosted by Travis McPeak</a>
+      </p>
+    <hr>
+      
+      
+      <h4>Container Security/Drone Security</h4>
+        <p>
+        Saturday, May 23, 2020
+        <br />
+        <br />Details
+        This meeting will take place online 2PM PST please watch
+        twitter @phackmeetup
+        https://twitter.com/phackmeetup for further updates.
+        Pacific Hackers Online Meetup
+        https://phack.my.webex.com/meet/phack
+        <br />
+        <br />
+            -->   <a href="https://www.meetup.com/pacifichackers/events/267933073/" target="_blank">Container Security - AleVsk</a><br />
+        --> Drone Security - Rod
+
+        </p>
+    <hr />
+ 
+        <h4>Learn blockchain tools and technologies that enable smart contracts</h4>
+      <p>
+        Thursday, June 4, 2020
+
+        <br />
+        Details
+        We will be holding this meetup remotely indefinitely. Details
+        What we'll do:<br />
+        - meet and greet<br />
+        - presentations and demos on blockchain and smart contracts<br />
+        <br />  
+        What to bring
+        Laptop (optional)
+
+        Food and drinks will be provided.
+      <br />
+      <br />
+      Link: <a href="https://www.meetup.com/Blockchain-Applications-and-Smart-Contracts/events/fwdljrybcjbgb/" target="_blank">blockchain tools</a>
+      </p>
+
+    <hr>
+      
+  </div>  
+    <div class="item4"><p>Copyright &copy; 2020 - All rights reserved
+                          <br /> Guillermo Hernandez 
+        <br /> <a href=mailto:gherna87@mail.ccsf.edu>gherna87@mail.ccsf.edu </a></p></div>
 </div>
 </body>
 </html>
-
 
