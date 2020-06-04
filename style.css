@@ -52,6 +52,11 @@ button {
   color: white;
   font-size: 1.8rem;
   cursor: pointer;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
 }
 /* Nav section with HERO*/
 
