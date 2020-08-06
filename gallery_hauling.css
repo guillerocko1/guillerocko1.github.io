@@ -1,0 +1,49 @@
+body {
+  color: #665544;
+  background-color: #172230;
+  background-image: url("images/backdrop.gif");
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.header {
+  margin: 40px 0px 20px 0px;
+}
+
+.entry {
+  width: 250px;
+  float: left;
+  margin: 10px;
+  height: 250px;
+  padding: 10px;
+  padding-bottom: 10px;
+  background-image: url("images/shadow.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+figure {
+  display: block;
+  width: 250px;
+  height: 250px;
+  background-color: #e7e3d8;
+  margin: 0px;
+  padding: 10px;
+  text-align: left;
+}
+
+figure img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #d6d6d6;
+}
+
+figcaption {
+  background-image: url("images/icon.png") no-repeat;
+  padding-left: 20px;
+}
