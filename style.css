@@ -229,8 +229,8 @@ nav ul {
   background: #27394e;*/
   background: #172230;
 
-  padding: 3rem;
-  min-height: 30vh;
+  padding: 1rem;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
