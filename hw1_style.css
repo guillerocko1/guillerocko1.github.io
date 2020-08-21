@@ -70,7 +70,7 @@ h3 {
 .item3{
     
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url(images/javascript.jpeg);
+    url(img/javascript.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
