@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #94979b, #e7e9eb);
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+/*Customozing the header area*/
+.item1 {
+  background: #172230;
+  /*Applying gradient diagonally combinig two colors.*/
+  background-image: linear-gradient(to bottom right, #172230, #47648a);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 3rem;
+  height: 10rem;
+  margin: 0rem;
+  z-index: 1;
+}
+
+.item1 h2 {
+  padding-top: 2rem;
+}
+
+/*Customozing the menu area*/
+.item2 {
+  background: #2196f3;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0rem;
+  text-align: center;
+  width: 6rem;
+}
+
+/*Customozing the main area*/
+.item3 {
+  background: white;
+}
+
+.item3{
+    
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(images/javascript.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item3_x {
+    background: white;
+  }
+/*
+.item3_x{
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+      url(images/comingsoon.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+  }*/
+  /*Customozing the footer area*/
+  .item4 {
+    background: #172230;
+    background-image: linear-gradient(to bottom right, #172230, #47648a);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem;
+    margin: 0rem;
+    height: 6rem;
+    z-index: 1;
+  }
+  /*Defining position over the grid for each area */
+  .item1 {
+    grid-area: header;
+  }
+  .item2 {
+    grid-area: menu;
+  }
+  .item3 {
+    grid-area: main;
+  }
+  .item4 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: /*Define the areas over the grid */
+      "header header header header header header"
+      "menu main main main main main"
+      "footer footer footer footer footer footer";
+    grid-gap: 0px; /*defines the size of the gap between the rows and columns in a grid layout */
+    background-color: #2196f3;
+    padding: 0px;
+    margin: 25px auto;
+    width: 85%;
+    height: auto;
+    min-width: 85%;
+  }
+
+  .grid-container > div {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  /*Applying color to the links*/
+  a:link {
+    color: #ffffff;
+  }
+
+  a:visited {
+    color: #ffffff;
+  }
+
+  /* mouse over link */
+  .item2 a:hover {
+    opacity: 0.5;
+  }
+
+  .item2 #menu ul {
+    list-style-type: none;
+    padding: 1.5rem;
+  }
+
+  .item2 #menu li {
+    /*opacity: 0.3;*/
+    box-shadow: 3px 3px #888888;
+  }
+
+  /*Delete the bulltes from the menu*/
+  .item2 #menu a {
+    text-decoration: none;
+  }
+
+  /*Customize the bottom options*/
+  .item2 #menu li {
+    margin: 1.25rem;
+    padding: 0.8rem;
+    line-height: 1;
+    background-color: rgb(185, 180, 180);
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+
