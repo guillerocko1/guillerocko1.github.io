@@ -97,8 +97,12 @@ h3 {
   text-decoration: none;
   padding: 2rem;
   margin: 0rem;
-  height: 6rem;
+  height: 7rem;
   z-index: 1;
+}
+
+.item4 p {
+  padding-top: 1rem;
 }
 /*Defining position over the grid for each area */
 .item1 {
@@ -149,6 +153,7 @@ a:visited {
 }
 
 /* mouse over link */
+
 .item2 a:hover {
   opacity: 0.5;
 }
