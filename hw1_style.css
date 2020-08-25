@@ -185,15 +185,25 @@ a:visited {
   text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 950px) {
   html {
     font-size: 45%;
+  }
+
+  body {
+    min-width: 600px;
   }
 
   .item1 h2 {
     font-size: 3rem;
     text-align: center;
   }
+
+  .item2 #menu ul {
+    list-style-type: none;
+    padding: 0.8rem;
+  }
+
   .item2 #menu {
     min-width: 5rem;
   }
@@ -201,8 +211,9 @@ a:visited {
   .item2 #menu li {
     height: 25px;
     width: 80px;
-    font-size: 0.8rem;
+    font-size: 1.25rem;
   }
+
   .item4 {
     text-align: center;
   }
