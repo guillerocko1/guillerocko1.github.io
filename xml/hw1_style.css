@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*property allows us to include the padding and border 
+  in an element's total width and height.*/
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #94979b, #e7e9eb);
+}
+
+h1 {
+  font-size: 2.6rem;
+  padding-top: 3rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+/*Customozing the header area*/
+.item1 {
+  /*Applying gradient diagonally combinig two colors.*/
+  /*background-image: linear-gradient(to bottom right, #172230, #47648a);*/
+  background-image: linear-gradient(to bottom right, #193102, #4ebd33);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 3rem;
+  height: 10rem;
+  margin: 0rem;
+  z-index: 1;
+}
+
+.item1 h2 {
+  padding-top: 2rem;
+}
+
+/*Customozing the main area*/
+.item3 {
+  color: rgb(29, 29, 114);
+}
+
+.item3 h2 {
+  padding-top: 2rem;
+}
+
+.item3 .center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
+
+.item3 {
+  align-content: center;
+}
+
+.item3 .center th {
+  background-color: rgb(88, 83, 83);
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.item3 td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.25rem;
+}
+/*
+.item3 tr:nth-child(even) {
+  background-color: #dddddd;
+}*/
+
+.item3 {
+  background: white;
+}
+
+.item3_x {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(img/comingsoon.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Customozing the footer area*/
+.item4 {
+  background: #172230;
+  /*background-image: linear-gradient(to bottom right, #172230, #47648a);*/
+  background-image: linear-gradient(to bottom right, #193102, #4ebd33);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 2rem;
+  margin: 0rem;
+  height: 7rem;
+  z-index: 1;
+}
+
+.item4 p {
+  padding-top: 1rem;
+}
+/*Defining position over the grid for each area */
+.item1 {
+  grid-area: header;
+}
+.item3 {
+  grid-area: main;
+}
+.item3_x {
+  grid-area: main;
+}
+.item4 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: /*Define the areas over the grid */
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  grid-gap: 0px; /*defines the size of the gap between the rows and columns in a grid layout */
+  background-color: #2196f3;
+  padding: 0px;
+  margin: 25px auto;
+  width: 85%;
+  height: auto;
+  min-width: 85%;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/*Applying color to the links*/
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+/* mouse over link */
+.item3 a:hover {
+  opacity: 0.5;
+}
+
+/*Media*/
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 45%;
+  }
+
+  body {
+    min-width: 550px;
+  }
+
+  .item1 h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .item4 {
+    text-align: center;
+  }
+}
