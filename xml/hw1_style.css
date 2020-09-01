@@ -29,7 +29,7 @@ p {
 
 h2 {
   font-size: 2rem;
-  color: rgb(9, 70, 9);
+  rgb(29, 29, 114);
 }
 
 h3 {
@@ -87,22 +87,16 @@ th {
   text-align: left;
   padding: 8px;
   font-size: 1.25rem;
+  text-align: justify;
+  max-width: 40rem;
 }
-/*
+
 .item3 tr:nth-child(even) {
   background-color: #dddddd;
-}*/
+}
 
 .item3 {
   background: white;
-}
-
-.item3_x {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url(img/comingsoon.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /*Customozing the footer area*/
