@@ -14,8 +14,13 @@ body {
   background-image: linear-gradient(to bottom right, #94979b, #e7e9eb);
 }
 
+.grid-container {
+  box-shadow: 10px 10px 5px grey;
+}
+
 h1 {
   font-size: 2.6rem;
+  padding-top: 3rem;
 }
 
 li {
@@ -27,7 +32,9 @@ p {
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  text-decoration-line: underline;
 }
 
 h3 {
@@ -37,9 +44,9 @@ h3 {
 
 /*Customozing the header area*/
 .item1 {
-  background: #172230;
   /*Applying gradient diagonally combinig two colors.*/
-  background-image: linear-gradient(to bottom right, #172230, #47648a);
+  /*background-image: linear-gradient(to bottom right, #172230, #47648a);*/
+  background-image: linear-gradient(to bottom right, #193102, #4ebd33);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -53,45 +60,60 @@ h3 {
   padding-top: 2rem;
 }
 
-/*Customozing the menu area*/
-.item2 {
-  background: #2196f3;
-  color: #ffffff;
-  padding: 0px;
-  margin: 0rem;
-  text-align: center;
-  width: 4rem;
-}
-
 /*Customozing the main area*/
 .item3 {
-  background: white;
+  color: rgb(29, 29, 114);
+}
+
+.item3 h2 {
+  padding-top: 2rem;
+}
+
+.item3 .center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
 }
 
 .item3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url(img/javascript.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  align-content: center;
 }
 
-.item3_x {
+.item3 .center th {
+  background-color: rgb(88, 83, 83);
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.item3 .center {
+  box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 2rem;
+}
+
+.item3 td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.25rem;
+  text-align: justify;
+  max-width: 40rem;
+}
+
+.item3 tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.item3 {
   background: white;
-}
-
-.item3_x {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url(img/comingsoon.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /*Customozing the footer area*/
 .item4 {
   background: #172230;
-  background-image: linear-gradient(to bottom right, #172230, #47648a);
+  /*background-image: linear-gradient(to bottom right, #172230, #47648a);*/
+  background-image: linear-gradient(to bottom right, #193102, #4ebd33);
   color: white;
   text-align: center;
   text-decoration: none;
@@ -108,9 +130,6 @@ h3 {
 .item1 {
   grid-area: header;
 }
-.item2 {
-  grid-area: menu;
-}
 .item3 {
   grid-area: main;
 }
@@ -125,7 +144,7 @@ h3 {
   display: grid;
   grid-template-areas: /*Define the areas over the grid */
     "header header header header header header"
-    "menu main main main main main"
+    "main main main main main main"
     "footer footer footer footer footer footer";
   grid-gap: 0px; /*defines the size of the gap between the rows and columns in a grid layout */
   background-color: #2196f3;
@@ -137,13 +156,13 @@ h3 {
 }
 
 .grid-container > div {
-  /*background-color: rgba(255, 255, 255, 0.8);*/
   text-align: center;
   padding: 0;
   font-size: 1rem;
 }
 
 /*Applying color to the links*/
+
 a:link {
   color: #ffffff;
 }
@@ -153,38 +172,11 @@ a:visited {
 }
 
 /* mouse over link */
-
-.item2 a:hover {
+.item3 a:hover {
   opacity: 0.5;
 }
 
-.item2 #menu ul {
-  list-style-type: none;
-  padding: 3.5rem;
-}
-
-.item2 #menu li {
-  /*opacity: 0.3;*/
-  box-shadow: 3px 3px #888888;
-}
-
-/*Delete the bulltes from the menu*/
-.item2 #menu a {
-  text-decoration: none;
-}
-
-/*Customize the bottom options*/
-.item2 #menu li {
-  margin: 1.25rem;
-  padding: 0.8rem;
-  line-height: 1;
-  background-color: rgb(185, 180, 180);
-  height: 35px;
-  width: 120px;
-  border-radius: 5px;
-  text-align: center;
-}
-
+/*Media*/
 @media only screen and (max-width: 950px) {
   html {
     font-size: 45%;
@@ -197,21 +189,6 @@ a:visited {
   .item1 h2 {
     font-size: 3rem;
     text-align: center;
-  }
-
-  .item2 #menu ul {
-    list-style-type: none;
-    padding: 0.8rem;
-  }
-
-  .item2 #menu {
-    min-width: 5rem;
-  }
-
-  .item2 #menu li {
-    height: 25px;
-    width: 80px;
-    font-size: 1.25rem;
   }
 
   .item4 {
