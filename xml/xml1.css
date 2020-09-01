@@ -24,7 +24,7 @@ author {
   font-style: italic;
 }
 
-book:nth-child(even) {
+book:nth-child(odd) {
   background-color: lightblue;
 }
 
