@@ -42,6 +42,10 @@ h3 {
   font-weight: normal;
 }
 
+.center a {
+  text-decoration-line: none;
+}
+
 /*Customozing the header area*/
 .item1 {
   /*Applying gradient diagonally combinig two colors.*/
@@ -67,6 +71,11 @@ h3 {
 
 .item3 h2 {
   padding-top: 2rem;
+}
+
+/*Table effect*/
+.item3 .center th:hover {
+  opacity: 0.8;
 }
 
 .item3 .center {
@@ -133,9 +142,7 @@ th {
 .item3 {
   grid-area: main;
 }
-.item3_x {
-  grid-area: main;
-}
+
 .item4 {
   grid-area: footer;
 }
@@ -173,7 +180,8 @@ a:visited {
 
 /* mouse over link */
 .item3 a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+  color: darkblue;
 }
 
 /*Media*/
