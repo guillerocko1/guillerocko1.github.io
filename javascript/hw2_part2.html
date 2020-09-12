@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="function3.js"></script>
+    <title>Homework 2 - Part 2</title>
+    <script>
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("#textarea").fadeTo("slow", 0.5);
+        });
+      });
+      $(document).ready(function () {
+        $("#back").click(function () {
+          $("#textarea").fadeTo("slow", 1);
+        });
+      });
+    </script>
+  </head>
+  <body onload="document.myform.num1.focus()">
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 2</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw2.html">Part 1</a></li>
+            <li><a href="hw2_part3.html">Part 3</a></li>
+            <li><a href="extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      
+      <section class="content2_2">
+        <section class="body">
+        <h3>PART 2</h3>
+        <textarea
+              id="announced"
+              rows="4"
+              cols="50"
+            >
+            inputs three integers via form text boxes, the result will display the sum, average, and product of the three integers, and the smallest and largest of the three integers.  </textarea>
+        <form name="myform">
+          <table class="table">
+            <tr>
+              <td>First Number:</td>
+              <td><input type="text" name="num1" size="10" /></td>
+            </tr>
+            <tr>
+              <td>Second Number:</td>
+              <td><input type="text" name="num2" size="10" /></td>
+            </tr>
+            <tr>
+              <td>Third Number:</td>
+              <td><input type="text" name="num3" size="10" /></td>
+            </tr>
+          </table>
+          <br />
+          <input type="button" onclick="process()" value="SUBMIT" />
+          <input type="reset" value="RESET" />
+          <button type="button" id="fade">Click to Fade Results</button>
+          <button type="button" id="back">Back Fade</button><br /><br />
+          <textarea
+            id="textarea"
+            rows="7"
+            cols="48"
+            name="result"
+          >
+          </textarea>
+          <br />
+        </form>
+        </section>
+      </section>
+      <!-- end content -->
+   
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

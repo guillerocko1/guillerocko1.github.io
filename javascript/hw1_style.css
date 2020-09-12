@@ -40,39 +40,40 @@ h3 {
 }
 
 /*Customozing the header area*/
-.item1 {
+.header {
   background: #172230;
   /*Applying gradient diagonally combinig two colors.*/
   background-image: linear-gradient(to bottom right, #172230, #47648a);
   color: white;
   text-align: center;
+  vertical-align: auto;
   text-decoration: none;
-  padding: 3rem;
+  padding: 2rem;
   height: 10rem;
   margin: 0rem;
   z-index: 1;
 }
 
-.item1 h2 {
-  padding-top: 2rem;
-}
-
 /*Customozing the menu area*/
-.item2 {
+.aside {
   background: #2196f3;
   color: #ffffff;
   padding: 0px;
   margin: 0rem;
   text-align: center;
   width: 4rem;
+  /**/
+  padding-right: 12rem;
+  /**/
 }
 
-/*Customozing the main area*/
-.item3 {
+/*Customozing the content area*/
+/*Content hw1*/
+.content {
   background: white;
 }
 
-.item3 {
+.content {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
     url(img/javascript.jpeg);
   background-repeat: no-repeat;
@@ -80,11 +81,227 @@ h3 {
   background-position: center;
 }
 
-.item3_x {
+/*Content hw2 part 1*/
+
+#panel,
+#flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.content2_1 {
+  height: 20rem;
+}
+
+.content2_1 h3 {
+  padding-top: 4rem;
+  color: #172230;
+  text-decoration: underline;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 2rem;
+}
+
+.content2_1 .result {
+  background: white;
+  text-align: center;
+  height: 20rem;
+}
+
+/*Content hw2 part 2*/
+.content2_2 {
+  background: white;
+  /**/
+  padding-top: 6rem;
+  padding-left: 30rem;
+  padding-bottom: 6rem;
+
+  /**/
+}
+
+input {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+table {
+  padding-left: 4.5rem;
+}
+
+td {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.content2_2 #textarea {
+  background-color: #f9f6f7;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  border: none;
+  color: #404969;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  box-shadow: 7px 7px 3px grey;
+}
+
+.content2_2 h3 {
+  padding-left: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #172230;
+  text-decoration: underline;
+}
+
+.content2_2 #announced {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  border: none;
+  color: #172230;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+/*Content hw2 part 3*/
+.content2_3 {
+  background: white;
+  padding-top: 4rem;
+  padding-left: 30rem;
+  padding-bottom: 6rem;
+}
+
+.content2_3 h3 {
+  padding-left: 16rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #172230;
+  text-decoration: underline;
+}
+
+.content2_3 #announced {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  border: none;
+  color: #172230;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.content2_3 #textarea {
+  background-color: #f9f6f7;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  border: none;
+  color: #404969;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  box-shadow: 7px 7px 3px grey;
+  padding-bottom: 2rem;
+}
+
+/*Homework 2 extra credit part*/
+.content2_extra {
+  background: white;
+  padding-left: 0rem;
+}
+
+.content2_extra h3 {
+  padding-left: 25rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #172230;
+  text-decoration: underline;
+}
+
+.content2_extra #flip {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.content2_extra th {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.content2_extra #announced {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  border: none;
+  color: #172230;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+.content2_extra #title {
+  align-content: center;
+}
+
+.content2_extra #table {
+  padding-left: 25rem;
+}
+
+.content2_extra #textarea {
+  resize: none;
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.content2_extra #result {
+  resize: none;
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #a8abaf, #e7e9eb);
+  box-shadow: 7px 7px 3px grey;
+  margin-bottom: 2rem;
+}
+
+.content_x {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
+    url(img/comingsoon.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Content hw3-hw8*/
+.content_x {
   background: white;
 }
 
-.item3_x {
+.content_x {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
     url(img/comingsoon.jpeg);
   background-repeat: no-repeat;
@@ -93,35 +310,58 @@ h3 {
 }
 
 /*Customozing the footer area*/
-.item4 {
+.footer {
   background: #172230;
   background-image: linear-gradient(to bottom right, #172230, #47648a);
   color: white;
   text-align: center;
+  vertical-align: auto;
   text-decoration: none;
   padding: 2rem;
   margin: 0rem;
-  height: 7rem;
+  height: 9rem;
   z-index: 1;
 }
 
-.item4 p {
-  padding-top: 1rem;
-}
 /*Defining position over the grid for each area */
-.item1 {
+.header {
   grid-area: header;
 }
-.item2 {
+.aside {
   grid-area: menu;
 }
-.item3 {
+
+/*Content hw1*/
+.content {
   grid-area: main;
 }
-.item3_x {
+
+/*Content hw2 part 1*/
+.content2_1 {
   grid-area: main;
 }
-.item4 {
+
+/*Content hw2 part 2*/
+.content2_2 {
+  grid-area: main;
+}
+
+/*Content hw2 part 3*/
+.content2_3 {
+  grid-area: main;
+}
+
+/*Content hw2 part 3*/
+.content2_extra {
+  grid-area: main;
+}
+
+/*Content hw3-hw8*/
+.content_x {
+  grid-area: main;
+}
+
+.footer {
   grid-area: footer;
 }
 
@@ -157,22 +397,22 @@ a:visited {
 }
 
 /* mouse over link  */
-.item2 a:hover {
+.aside a:hover {
   /*opacity: 0.5;*/
   color: #172230;
 }
 
-.item2 #menu li:hover {
+.aside #menu li:hover {
   opacity: 0.7;
 }
 /**********************/
 
-.item2 #menu ul {
+.aside #menu ul {
   list-style-type: none;
   padding: 3.5rem;
 }
 
-.item2 #menu li {
+.aside #menu li {
   /*opacity: 0.3;*/
   box-shadow: 7px 7px 3px grey;
 
@@ -180,12 +420,12 @@ a:visited {
 }
 
 /*Delete the bulltes from the menu*/
-.item2 #menu a {
+.aside #menu a {
   text-decoration: none;
 }
 
 /*Customize the bottom options*/
-.item2 #menu li {
+.aside #menu li {
   margin: 1.25rem;
   padding: 0.8rem;
   line-height: 1;
@@ -205,27 +445,33 @@ a:visited {
     min-width: 550px;
   }
 
-  .item1 h2 {
+  .header h2 {
     font-size: 3rem;
     text-align: center;
   }
 
-  .item2 #menu ul {
+  .aside #menu ul {
     list-style-type: none;
     padding: 0.8rem;
   }
 
-  .item2 #menu {
+  .aside #menu {
     min-width: 5rem;
   }
 
-  .item2 #menu li {
+  .aside #menu li {
     height: 25px;
     width: 80px;
     font-size: 1.25rem;
   }
 
-  .item4 {
+  .footer {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content2_extra #table {
+    padding-left: 20rem;
   }
 }

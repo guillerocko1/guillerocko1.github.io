@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="money_conversion.js"></script>
+    <title>Homework 2 - Part 3</title>
+    <script>
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("#result").fadeTo("slow", 0.5);
+        });
+      });
+      $(document).ready(function () {
+        $("#back").click(function () {
+          $("#result").fadeTo("slow", 1);
+        });
+      });
+
+      $(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+    </script>
+  </head>
+  <body onload="document.myform.num1.focus()">
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 2</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw2.html">Part 1</a></li>
+            <li><a href="hw2_part2.html">Part 2</a></li>
+            <li><a href="hw2_part3.html">Part 3</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content2_extra">
+        
+          <h3>EXTRA CREDIT</h3>
+          <id id="flip">Click to slide the panel down or up</id>
+          <div id="panel">
+          <textarea
+              id="announced"
+              rows="3"
+              cols="50"
+            >
+            Input an amount in U.S. dollars and the program will display in a table its equivalent in each of the above foreign currencies.</textarea>
+          <form name="myform">
+            <section id="table">
+            <table>
+              
+              <tr>
+                <th id="title">Currency</th>
+                <th id="title" class="money">Rate</th>
+                <th id="title" class="money">Value</th>
+              </tr>
+              <tr>
+                <td>British Pound</td>
+                <td class="money">0.77</td>
+                <td class="money">
+                  <textarea disabled id="textarea" rows="1" cols="5" name="pounds">
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Canadian Dollar</td>
+                <td class="money">1.31</td>
+                <td class="money">
+                  <textarea
+                    disabled
+                    id="textarea"
+                    rows="1"
+                    cols="5"
+                    name="canadian"
+                  >
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Euro</td>
+                <td class="money">0.89</td>
+                <td class="money">
+                  <textarea disabled id="textarea" rows="1" cols="5" name="euro">
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Japanese Yen</td>
+                <td class="money">108.38</td>
+                <td class="money">
+                  <textarea disabled id="textarea" rows="1" cols="5" name="yen">
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>Mexican Peso</td>
+                <td class="money">19.11</td>
+                <td class="money">
+                  <textarea disabled id="textarea" rows="1" cols="5" name="peso">
+                  </textarea>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">Enter Amount of U.S. Dollar</td>
+                <td class="money"><input class="value" type="text" name="num1" size="10" /></td> 
+                
+                </td>
+              </tr>
+            </table>
+          </section>
+            <br />
+            <input type="button" onclick="process()" value="SUBMIT" />
+            <input type="reset" value="RESET" />
+            <button type="button" id="fade">Click to Fade Results</button>
+            <button type="button" id="back">Back Fade</button><br /><br />
+            <textarea
+              id="result"
+              rows="3"
+              cols="47"
+              name="result" 
+            >
+            </textarea>
+            <br />
+          </form>
+          </div>
+      </section>
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>
