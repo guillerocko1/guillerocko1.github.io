@@ -10,7 +10,6 @@
 }
 .footer,
 .header {
-  vertical-align: auto;
   z-index: 1;
   text-decoration: none;
 }
@@ -110,12 +109,11 @@ h3 {
   padding: 4rem;
 }
 .content_x {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
-    url(img/comingsoon.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .content,
 .content1_2,
 .content1_3,
