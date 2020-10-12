@@ -87,6 +87,7 @@ h3 {
   margin: 0;
   text-align: center;
 }
+
 .content {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
     url(img/html.jpeg);
@@ -94,6 +95,7 @@ h3 {
   background-size: cover;
   background-position: center;
 }
+
 .content1_2 img {
   width: 100%;
   height: 100%;
@@ -114,11 +116,19 @@ h3 {
   background-position: center;
 }
 
+.content2 img {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0;
+  box-shadow: 8px 8px 5px grey;
+}
+
 .content,
 .content1_2,
 .content1_3,
 .content2_1,
-.content_x {
+.content_x,
+.content_2 {
   grid-area: main;
 }
 .footer {
