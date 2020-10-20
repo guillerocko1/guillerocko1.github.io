@@ -30,22 +30,43 @@
     <link rel="stylesheet" href="hw1_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="counter.js"></script>
-    <title>Homework 2 - Part 3</title>
+    <title>Homework 4 - Part 2</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+  <script src="table_hw4_2.js"></script>
+  <style>
+    th{
+      background-color: maroon;
+      color: white;
+    }
+    td, th {
+  border: 1px solid #111110;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f18350;
+}
+tr:nth-child(odd) {
+  background-color: #fcfa7d;
+}
+  </style>
+  <script>
+      
+    </script>
   </head>
-  <body >
+  <body onload="printtable()">
     <div class="grid-container">
       <header class="header">
-        <h2>CNIT 133 - Homework 4 Part 1</h2>
+        <h2>Homework 4 - Part 2</h2>
       </header>
       <!-- end header -->
       <aside class="aside">
         <div id="menu">
           <ul>
             <li><a href="hw1.html">Home</a></li>
-            <li><a href="hw4_part1.html">Part 1</a></li>
+            <li><a href="hw4.html">Homework 4</a></li>
             <li><a href="hw4_part2.html">Part 2</a></li>
             <li><a href="hw4_extra_credit.html">Extra Credit</a></li>
           </ul>
@@ -54,29 +75,22 @@
       </aside>
       <!-- end aside -->
       <section class="content2_3">
-        
-          <h3>CNIT 133 Homework 4 </h3>
-          <h3>- Looping Statements - </h3>
-          
-          <br /><br />
-          <form name="myform">
-            <h1>Part 1</h1>
-            <h5>Use of "for" and "while" or "do while" statements <br>  to calculateproducts and sums of integers inclusive  </h5>
-            <br /><br />
-  
-            <h1>Part 2</h1>
-            <br /> <br />
-            <h5>Calculating the compound interest on $1,000 principal <br>  and interest rates 5, 6 and 7% </h5>
-            
-            <br />         <br />
-            <h1>EXTRA CREDIT</h1>
-            <br />
-            
-            <h5> while or for statements to create a square with asterisks (*) </h5>
-            <br /><br />
-            
+        <form id="myform">
+          <textarea
+              id="prod_while_text"
+              rows="6"
+              cols="50"
+              name="result"  
+            >Compound Interest on $1000. 5 - 7% </textarea>
           </form>
-        
+
+          <br><br>
+        <p id="demo"></p>
+        <br><br>
+        <p id="demo1"></p>
+        <br><br>
+        <p id="demo2"></p>
+       
       </section>
       <!-- end content -->
       <footer class="footer">

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="counter.js"></script>
+    <title>Homework 2 - Part 3</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      
+      function square(){
+        var size, output="";
+        
+        size = document.forms["myform"].elements["size"].value;
+        if (
+          size == "" ||
+          size < 2 || size > 10  
+        ) {
+          alert("Value not allowed. \nPlease an integer number between 2 and 10!!!");
+            
+          //alert("Empty values are not allowed. Please enter 3 integer numbers!!!");
+          return false;
+        }
+        var letters = /^[(-9)-9]+$/;
+        if (
+          size.match(letters) 
+        ) {
+          var size_n1 = parseInt(size);//sold_item: how many items have sold the salesperson
+          for(i = 1; i <= size_n1; i++)
+          {
+            for(j = 1; j <= size_n1; j++)
+            {
+              if(i==1 || i==size || j==1 || j==size)
+              output+= "*"; 
+              else
+              output+=  "&nbsp;&nbsp;"; 
+            }
+            output+=   "<br>";
+            
+          }	
+          
+         
+          document.getElementById("result").innerHTML = output; 
+           
+        }
+          else {
+              document.myform.result.value =
+              "Characters are not allowed. \nPlease enter an integer number!!!";
+    //alert("Characters are not allowed. Please input integers only");
+            return false;
+              }
+      }
+
+      
+      function clear()
+      {
+        document.forms["myform"].elements["size"].value = "";
+        document.getElementById("result").innerHTML = "";
+        document.getElementById("size").focus();
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 4 Extra Credit</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</a></li>
+            <li><a href="hw4.html">Homework 4</a></li>
+            <li><a href="hw4_part2.html">Part 2</a></li>
+            <li><a href="hw4_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content2_3">
+ 
+          <form name="myform">
+            <table class="table">
+              <tr>
+                <td><h4>Enter an integer between 2 and 10.</h4></td>
+                <td><input type="text" name="size" size="10" /></td>
+              </tr>
+              <tr> 
+                <td><input type="button" onclick="square()" value="SUBMIT" /></td>
+                <td><input type="reset" onclick="clear()" value="RESET" /></td>
+            </tr>
+            </table>
+            <br><br>
+
+            <p id="result"></p>
+            
+            
+        </form>
+      </section>
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="counter.js"></script>
+    <title>Homework 2 - Part 3</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      $( function() {//Draggable function
+        $( "#draggable" ).draggable();
+      } );
+
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("#textarea").fadeTo("slow", 0.5);
+        });
+      });
+      $(document).ready(function () {
+        $("#back").click(function () {
+          $("#textarea").fadeTo("slow", 1);
+        });
+      });
+      function forFunction() {
+        var i, total_sum=0, total_product=1;
+        var j=3, sum_while=0, product_while=1;
+        
+        for(i=5; i<=21; i+=4)
+        {
+          total_sum=total_sum + i;
+          total_product= total_product * i;
+        }
+        document.forms["myform"].elements["textarea2"].value= total_product;
+        document.forms["myform"].elements["textarea1"].value= total_sum; 
+        
+        while (j<=21)
+        {
+          sum_while=sum_while+j;
+          product_while=product_while*j;
+          j+=3;
+        }
+
+        document.forms["myform"].elements["prod_while_text"].value= product_while;
+        document.forms["myform"].elements["sum_while_text"].value= sum_while; 
+
+      }  
+
+    </script>
+  </head>
+  <body onload="forFunction()">
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 4 Part 1</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</a></li>
+            <li><a href="hw4.html">Homework 4</a></li>
+            <li><a href="hw4_part2.html">Part 2</a></li>
+            <li><a href="hw4_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content2_3">
+        
+          <h1>Looping Statements Part1 a</h1><br />
+          <h1>For and While Statements</h1>
+          
+          <form name="myform">
+            <br /><br />
+            <h5>The product  of every fourth integer from 5 to 21 inclusive is:</h5> <br />
+  
+            <textarea
+            id="textarea2"
+            rows="4"
+            cols="50"
+          >
+            </textarea>
+            <br /> <br />
+            <h5>The Sum of every fourth integer from 5 to 21 inclusive is: </h5><br><br />
+            <textarea
+              id="textarea1"
+              rows="4"
+              cols="48"
+              name="result"  
+            >
+            </textarea>
+            <br /><br />
+            <h5>These numbers are:  5, 9, 13, 17, 21</h5> <br />
+            <br /><br />
+            <div id="draggable" class="ui-widget-content">
+              <h1>Drag me around</h1>
+            </div>
+            <br /><br />
+            <h5>The product  of every third integer from 3 to 21 inclusive is: </h5><br />
+  
+            <textarea
+            id="sum_while_text"
+            rows="4"
+            cols="50"
+          >
+            </textarea>
+            <br /> <br />
+            <h5>The Sum of every fourth integer from 5 to 21 inclusive is: </h5><br />
+            <textarea
+              id="prod_while_text"
+              rows="4"
+              cols="48"
+              name="result"  
+            >
+            </textarea>
+            <br /><br />
+            <h5>These numbers are: 3, 6, 9, 12, 15, 18, 21</h5> <br />
+            <br /><br />
+          </form>
+        
+      </section>
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>
