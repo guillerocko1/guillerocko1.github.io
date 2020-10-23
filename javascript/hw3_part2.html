@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="function_hw3_2.js"></script>
+    <title>Homework 2 - Part 2</title>
+    <script>
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("#textarea").fadeTo("slow", 0.5);
+        });
+      });
+      $(document).ready(function () {
+        $("#back").click(function () {
+          $("#textarea").fadeTo("slow", 1);
+        });
+      });
+      
+  $( function() {
+    $( document ).tooltip();
+  } );
+  </script>
+  <style>
+  label {
+    display: inline-block;
+    width: 5em;
+  }
+  </style>
+  </head>
+  <body onload="document.myform.num1.focus()">
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 2</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw3_part1.html">Part 1</a></li>
+            <li><a href="hw3_part3.html">Part 3</a></li>
+            <li><a href="hw3_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      
+      <section class="content2_2">
+        <section class="body">
+        <h3>PART 2</h3>
+        <textarea
+              id="announced"
+              rows="4"
+              cols="50"
+            >
+            calculateing how much the salesperson sold and how much they earned. 
+            </textarea>
+        <form name="myform">
+          <h4>Input the number of items sold for each item number </h4>
+          <table class="table">
+            <tr>
+              <td>SalesPerson:</td>
+              <td><input  id="age" title= "Please make sure that the salesperson's name is spelled correctly"></td>
+            </tr>
+            <tr>
+              <td>Item 1:  </td>
+              <td><input  class="data"   type="text" name="item1" size="10" /></td>
+            </tr>
+            <tr>
+              <td>Item 2:  </td>
+              <td><input  class="data"   type="text" name="item2" size="10" /></td>
+            </tr>
+            <tr>
+              <td>Item 3:  </td>
+              <td><input  class="data"   type="text" name="item3" size="10" /></td>
+            </tr>
+            <tr>
+              <td>Item 4: </td>
+              <td><input  class="data"   type="text" name="item4" size="10" /></td>
+            </tr>
+          </table>
+          
+          <br /><br />
+          <input type="button" onclick="process()" value="SUBMIT" />
+          <input type="reset" value="RESET" />
+          
+          
+          <br /><br />
+
+          <table class="table1">
+            <tr>
+              <th>Item #</th>
+              <th>Price</th>
+              <th>Number Sold</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>$239.99</td>
+              <td><input disabled class="data" type="text" name="sold1" size="10" /></td>
+              <td><input disabled class="data"  type="text" name="total1" size="10" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$129.75</td>
+              <td><input disabled  class="data"  type="text" name="sold2" size="10" /></td>
+              <td><input disabled  class="data"  type="text" name="total2" size="10" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>$99.95</td>
+              <td><input disabled  class="data"  type="text" name="sold3" size="10" /></td>
+              <td><input disabled  class="data"  type="text" name="total3" size="10" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>$350.89</td>
+              <td><input disabled  class="data"  type="text" name="sold4" size="10" /></td>
+              <td><input disabled  class="data"  type="text" name="total4" size="10" /></td>
+            </tr>
+            <tr>
+              <td colspan="3">Total Amount Sold</td>
+              <td><input disabled  class="data"  type="text" name="total_sold" size="10" /></td>
+            </tr>
+            <tr>
+              <td colspan="3">Total Weekly Earnings</td>
+              <td><input disabled  class="data"  type="text" name="total_earned" size="10" /></td>
+            </tr>
+          </table>
+          <br /><br />  
+          
+        </form>
+        </section>
+      </section>
+      <!-- end content -->
+   
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="function_hw3_3.js"></script>
+    <title>Homework 3 - Part 3</title>
+    <script>
+    
+
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("#textarea").fadeTo("slow", 0.5);
+        });
+      });
+      $(document).ready(function () {
+        $("#back").click(function () {
+          $("#textarea").fadeTo("slow", 1);
+        });
+      });
+
+      $( function() {
+    $( document ).tooltip();
+  } );
+    </script>
+    <style>
+    label {
+      display: inline-block;
+      width: 5em;
+    }
+    </style>
+  </head>
+  <body onload="document.myform.num.focus()">
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 - Homework 3</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw3_part1.html">Part 1</a></li>
+            <li><a href="hw3_part2.html">Part 2</a></li>
+            <li><a href="hw3_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      
+      <section class="content2_2">
+        <section class="body">
+        <h3>PART 3</h3>
+        <textarea
+              id="announced"
+              rows="4"
+              cols="50"
+            >
+            input an integer value to convert from Celcius to Farenheit or Viceversa  </textarea>
+        <form name="myform">
+          <table class="table">
+           
+            <tr>
+              <td>Value to convert: </td>
+              <td><input type="text" name="num" size="10" /></td>
+            </tr>
+          </table>
+          <br />
+          <input type="button" name="CtoF" value="C to F" onclick="process('ctof')">
+          <input type="button" name="FtoC" value="F to C" onclick="process('ftoc')">
+          <input type="reset" value="Reset">
+          <button type="button" id="fade">Click to Fade Results</button>
+          <button type="button" id="back">Back Fade</button><br /><br />
+          <textarea
+            id="textarea"
+            rows="3"
+            cols="48"
+            name="result"
+          >
+          </textarea>
+          <br />
+        </form>
+        </section>
+      </section>
+      <!-- end content -->
+   
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

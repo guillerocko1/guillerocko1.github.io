@@ -201,6 +201,12 @@ td {
   resize: none;
 }
 
+.content2_2 .data {
+  background-color: white;
+  text-align: right;
+  enable-background: none;
+}
+
 /*Content hw2 part 3*/
 .content2_3 {
   background: white;
