@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="func_hw5_3.js"></script>
+    <script>
+      $(function() {
+       $( "#dialog" ).dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+      
+        hide: {
+          effect: "explode",
+          duration: 1000
+        }
+       });
+      
+       $( "#opener" ).click(function() {
+        $( "#dialog" ).dialog( "open" );
+       });
+      });
+      </script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 5 - Arrays </h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw5_part1.html">Part 1</a></li>
+            <li><a href="hw5_part2.html">Part 2</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      
+      <section class="content_5_3">
+
+        <table>
+          <tr>
+          <td>
+            <br>
+            <h1>States Information</h1>
+
+<br>
+
+<div id="dialog" title="Instructions">
+<h5>Enter an State Company abbreviation or name (lower or upper case) <br>in the field next to the
+State Info button</h5>
+</div>
+<br>
+
+<table class="state">
+  
+  <tr>
+    <th>State Abbr</th>
+    <th>State Name</th>
+    <th>Capital</th>
+    <th>Population</th>
+  </tr>
+<tr>
+<td>AL</td>	
+<td>Alabama</td>	
+<td>Montgomery</td>		
+<td>4,887,871</td>	
+</tr>
+
+<tr>
+<td>AK</td>	
+<td>Alaska</td>	
+<td>Juneau</td>		
+<td>737,438</td>	
+</tr>
+
+<tr>
+<td>AZ</td>	
+<td>Arizona</td>	
+<td>Phoenix</td>		
+<td>7,171,646</td>	
+</tr>
+
+<tr>
+<td>AR</td>	
+<td>Arkansas</td>	
+<td>Little Rock</td>		
+<td>3,010,825</td>	
+</tr>
+
+<tr>
+<td>CA</td>	
+<td>California</td>	
+<td>Sacramento</td>		
+<td>39,557,045</td>	
+</tr>
+
+<tr>
+<td>CO</td>	
+<td>Colorado</td>	
+<td>Denver</td>		
+<td>5,694,564</td>	
+</tr>
+
+</table>
+
+<br>
+
+<form name="SearchForm">
+<input type="text" size="15" name="inputState" autofocus> 
+<input onclick="ButtonPressed();" type="button" value="State Info" name="search" id="search">
+
+<br><br>
+
+
+Capital
+
+<br>
+
+<input type="text" size="20" name="capital" id="capital"><br><br>
+Population<br>
+<input type="text" size="20" name="population" id="population"><br><br>
+<input type="reset" value="Reset" onclick="location.reload();">
+</form>
+
+
+        </td>
+        </tr>
+      </table>
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

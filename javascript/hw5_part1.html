@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="func_hw5_1.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 5 - Arrays </h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw5_part2.html">Part 2</a></li>
+            <li><a href="hw5_part3.html">Part 3</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content_5">
+        
+      <br>
+      
+      
+<table>
+<tr>
+<td>
+  <h1>Personal Information </h1>
+  <form id="myform" name="myform" action="/action_page.php" method="post" target="_blank">
+  <!-- <form id="myform" name="myform"> -->
+    <table>
+        <tr>
+        <td>Name:</td> 
+        <td><input class="textbox" type="text" name="name" id="name" size="30"></td>
+        <td><div id="msg"></div></td>
+        </tr>
+        <tr>
+        <td>Address:</td> 
+        <td><input class="textbox"  type="text" id="address" size="30"></td>
+        <td><div id="msg2"></div></td>
+        </tr>
+        <tr>
+        <td>E-mail:</td> 
+        <td><input class="textbox"  type="text" id="email" size="25"></td>
+        <td><div id="msg3"></div></td>
+        </tr>
+  <!--
+  <tr>
+  <td><input type="button"  onclick="Validate(this.form)" value="SUBMIT"></td>
+  <td><input type="reset" value="RESET" onclick="window.location.reload();"></td>
+  
+  </tr>-->
+        <tr>
+        <td></td>
+        <td><div id="msgV"></div></td>
+        <td></td>
+        </tr>
+    </table>
+    <br /><br />
+    <h1>How do you qualify our service? :</h1>
+<!--<form id="myform" name="myform">-->
+    <table>
+        <tr>
+        <td><input type="radio" name="rating">Excellent</td>
+        <td><input type="radio" name="rating">Good</td>
+        <td><input type="radio" name="rating">Average</td>
+        <td><input type="radio" name="rating">Poor</td>
+        <td><div id="msg_radio"></div></td>
+        </tr>
+  <!--
+  <tr>
+   <td colspan="2"><input type="button"  onclick="valButton();" value="SUBMIT">
+   <td colspan="2"><input type="reset" value="RESET" onclick="window.location.reload();">
+  </tr>-->
+        <!--
+        <tr>
+        <td colspan="4"><div id="msg_radio"></div></td>
+        </tr>-->
+    </table>
+    
+    <span id="tm">
+      Select the time you would like to reserve:
+      <input type="checkbox" name="time" value="Morning">Morning
+      <input type="checkbox" name="time" value="Afternoon">Afternoon
+      <input type="checkbox" name="time" value="Night">Night
+    </span>
+    
+    <div id="msg_checkbox"></div>
+        <br><br>
+
+<!--<form id="myform" name="myform">-->
+    <span style="color: blue">My Occupation:</span>
+    <select name="status">
+    <option value=" ">-Choose one-</option>
+    <option value="student">student</option>
+    <option value="teacher">teacher</option>
+    <option value="programmer">programmer</option>
+    <option value="other">other</option>
+    </select>
+    <input type="button"  onclick="Validate(this.form)" value="SUBMIT">
+    <input type="reset" value="RESET" onclick="window.location.reload();">
+    <input type="reset" value="clear msgs" onclick="res();">
+
+    <div id="msg_select"></div>
+
+    
+     
+</form>
+
+</td>
+</tr>
+</table>
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="func_hw5_2.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 5 - Arrays </h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</li>
+            <li><a href="hw5_part1.html">Part 1</a></li>
+            <li><a href="hw5_part3.html">Part 3</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content_5">
+
+        <table>
+          <tr>
+          <td>
+        
+            <form>
+              <h5>Choose your destination (using onChange event handler)</h5>
+              <select name="destinationList" onChange="goToNewPage(this.form);">
+              <option>Choose Destination:</option>
+              <option value="http://www.google.com/", target="_blank">Google</option>
+              <option value="http://www.w3schools.com/" target="_blank">w3schools</option>
+              <option value="http://www.gmail.com/" target="_blank">Gmail</option>
+              <option value="http://www.amazon.com/" target="_blank">Amazon</option>
+              </select>
+            </form>
+              
+              <br><br>
+              
+            <form>
+              <h5>Choose your destination (using onClick event handler)</h5>
+              <select name="destinationList">
+                <option value="http://www.google.com/" target="_blank">Google</option>
+                <option value="http://www.w3schools.com/" target="_blank">w3schools</option>
+                <option value="http://www.gmail.com/" target="_blank">Gmail</option>
+                <option value="http://www.amazon.com/" target="_blank">Amazon</option>
+              </select>
+              <input type="button" value="Go" onClick="goToNewPage(this.form);">
+            </form>
+
+        </td>
+        </tr>
+      </table>
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>
