@@ -29,7 +29,9 @@ function ButtonPressed()
     }
 
   if ( found == false ) {
-   document.forms["SearchForm"].elements["population"].value= "State Info not found!"; 
+   document.forms["SearchForm"].elements["population"].value= "State Info not found!";
+   document.forms["SearchForm"].elements["capital"].value = "";
+
        }
 
   }
