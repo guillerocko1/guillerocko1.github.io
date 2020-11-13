@@ -204,7 +204,6 @@ td {
 .content2_2 .data {
   background-color: white;
   text-align: right;
-  disabled
 }
 
 /*Content hw2 part 3*/
@@ -413,19 +412,17 @@ td {
 }
 
 .content_5 {
-  
-    background-color: white;
-    background-repeat: no-repeat;
+  background-color: white;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .content_5_3 {
-  
   background-color: white;
   background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .content_5_3 .state td {
@@ -433,15 +430,21 @@ background-position: center;
   border-collapse: collapse;
 }
 
-
-.content_5_3 th, td {
+.content_5_3 th,
+td {
   padding: 5px;
   text-align: left;
 }
 
-
-
-#msg, #msg2, #msg3, #msgV, #msg_radio, #msg_select, #msg_checkbox{color: red;}
+#msg,
+#msg2,
+#msg3,
+#msgV,
+#msg_radio,
+#msg_select,
+#msg_checkbox {
+  color: red;
+}
 
 .content_x {
   background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
@@ -532,10 +535,9 @@ background-position: center;
   grid-area: main;
 }
 
-.content_5_3{
+.content_5_3 {
   grid-area: main;
 }
-
 
 /*Content hw3-hw8*/
 .content_x {
