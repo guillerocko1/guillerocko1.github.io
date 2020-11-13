@@ -418,11 +418,23 @@ td {
   background-position: center;
 }
 
+.content_5 {
+  padding-left: 6rem;
+}
+
+.content_5 h3 {
+  padding-left: 12rem;
+  padding-top: 4rem;
+  color: #172230;
+  text-decoration: underline;
+}
+
 .content_5_3 {
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 .content_5_3 .state td {
