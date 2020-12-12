@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="func_hw6_1.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 6 - Objects </h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</a></li>
+            <li><a href="hw6_part2.html">Part 2</a></li>
+            <li><a href="hw6_part3.html">Part 3</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content_5">
+        
+
+
+
+        
+        <h1>Math Objects </h1>
+     
+        <form id="myform" name="myform" action="/action_page.php" method="post" target="_blank">
+        
+               
+                <h5>Enter a number with at least 4 decimal positions:</h5>
+                <input class="textbox" type="text" name="number" id="number" size="10" autofocus>
+                <br>
+                <div id="msg"></div>
+                <div id="msgV"></div>
+                
+        
+        <!--
+                <br>  
+            <table>
+              
+            <h1>Math Objects </h1>
+         
+            <form id="myform" name="myform" action="/action_page.php" method="post" target="_blank">
+            
+                    <tr>
+                    <td>Enter a number with at least 4 decimal positions:</td> 
+                    <td><input class="textbox" type="text" name="number" id="number" size="10" autofocus></td>
+                    <td><div id="msg"></div></td>
+                    </tr>
+                    <tr>
+                    <td><div id="msgV"></div></td>
+                    </tr>
+            </table>
+            -->
+            <textarea
+            id="result"
+            rows="8"
+            cols="80"
+            name="result"
+            disabled
+          >
+          </textarea>
+            <br />  <br />  
+                <input type="button"  onclick="Validate(this.form)" value="SUBMIT">
+                <input type="reset" value="RESET" onclick="window.location.reload();">
+                
+          <br />  <br />
+            <!--
+                <input type="reset" value="clear msgs" onclick="res();">
+            -->
+                <div id="msg_select"></div>
+
+    
+     
+</form>
+
+
+<br />
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

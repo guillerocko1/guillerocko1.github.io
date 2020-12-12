@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="func_hw6_3.js"></script>
+    
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 6 - Objects Part 3</h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</a></li>
+            <li><a href="hw6_part1.html">Part 1</a></li>
+            <li><a href="hw6_part2.html">Part 2</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content_5">
+        <br><br>
+        
+        <br><br>
+        <h5>Enter a phone number with the format (999) 999-9999 </h5>
+       
+        
+        <br><br>
+        <form action="/action_page.php" id="usrform">
+            <h5>Enter a valid phone number: </h5><input type="text" id="phone" name="phone" autofocus>
+            <br><br>
+            <h5>Area Code : </h5><input type="text" id="area" name="area" >
+            <br><br>
+            <h5>First 3 digits : </h5><input type="text" id="first" name="first">
+            <br><br>
+            <h5>Last 4 digits : </h5><input type="text" id="last" name="last">
+            
+          </form>
+          
+            <br />  <br />  
+                <input type="button"  onclick="valid_phone(this.form)" value="SUBMIT">
+                <input type="reset" value="RESET" onclick="window.location.reload();">
+                
+          <br />  <br />
+            <!--
+                <input type="reset" value="clear msgs" onclick="res();">
+            -->
+
+                <div id="msg"></div>
+
+<br />
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>

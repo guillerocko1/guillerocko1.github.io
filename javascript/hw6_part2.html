@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Main web page for CNIT 133 - JavaScript class Assignments FALL/2020"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>CNIT 133 - JavaScript</title>
+    <link rel="stylesheet" href="hw1_style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="func_hw6_2.js"></script>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <h2>CNIT 133 Homework 6 - Objects </h2>
+      </header>
+      <!-- end header -->
+      <aside class="aside">
+        <div id="menu">
+          <ul>
+            <li><a href="hw1.html">Home</a></li>
+            <li><a href="hw6_part1.html">Part 1</a></li>
+            <li><a href="hw6_part3.html">Part 3</a></li>
+          </ul>
+        </div>
+        <!-- end menu -->
+      </aside>
+      <!-- end aside -->
+      <section class="content_5">
+        <br><br>
+        <h3>Using the String method charAt() </h3>
+        <br><br>
+        <h5>Enter a sentence or parapgraph: </h5>
+        <textarea rows="4" cols="50" id="paragraph" name="paragraph" form="usrform">
+            Enter text here...</textarea>
+        <br><br>
+        <form action="/action_page.php" id="usrform">
+            <h5>Enter a character to search for</h5><input type="text" name="toSearch">
+          </form>
+          <br><br>
+          <h5>Result</h5>
+            <textarea
+            id="result"
+            rows="4"
+            cols="30"
+            name="result"
+            disabled
+          >
+          </textarea>
+            <br />  <br />  
+                <input type="button"  onclick="ToSearch(this.form)" value="SUBMIT">
+                <input type="reset" value="RESET" onclick="window.location.reload();">
+                
+          <br />  <br />
+            <!--
+                <input type="reset" value="clear msgs" onclick="res();">
+            -->
+                <div id="msg_select"></div>
+
+
+<br />
+      </section>
+      
+      <!-- end content -->
+      <footer class="footer">
+        <p>
+          Copyright &copy; 2020 - All rights reserved <br />
+          Guillermo Hernandez <br />
+          <a href="mailto:gherna87@mail.ccsf.edu">gherna87@mail.ccsf.edu </a>
+        </p>
+      </footer>
+      <!-- end footer -->
+    </div>
+    <!-- end grid-container -->
+  </body>
+</html>
