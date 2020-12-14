@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="utf-8">
+<meta name="description" content="Exercise 1 miscellaneous using classname">
+<title>ClassName Example</title>
+<link rel="stylesheet" href="style7_1.css" />
+<script src="func_hw7_1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="miscex3.js"></script>
+<script>
+  $(document).ready(function() {
+ $("#navigation").navPlugin({
+   'itemWidth': 180,
+   'itemHeight': 30,
+   'navEffect': "slide",
+   'speed': 250
+ });
+}); // end ready
+
+</script>
+<style>
+#wrapper {
+	width:800px;
+	margin:0px auto;
+	text-align:left;	
+	}
+
+#navigation ul, #navigation li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#navigation a {
+	background-color: rgb(204,204,204);
+	text-decoration: none;
+	font: 16px 'ColaborateLightRegular', Arial, sans-serif;
+	text-indent: 25px;
+	border-top: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	margin: 0px;
+	padding: 0px;
+	color: rgb(53,75,118);
+}
+
+#navigation a:hover {
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color: #555;
+	color: white;
+}
+  
+</style>
+</head>
+<body id="body" class="originalBody">
+
+  <div id="wrapper">
+ 
+    <h1>Navigation Menu - jQuery</h1>
+
+     <ul id="navigation">
+       <li><a href="hw1.html">Home - Homework 1</a></li>
+        <li><a href="hw2.html">Homework 2</a>
+          <ul>
+            <li><a href="hw2_part1.html">Part 1</a></li>
+            <li><a href="hw2_part2.html">Part 2</a></li>
+            <li><a href="hw2_part3.html">Part 3</a></li>
+            <li><a href="extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </li>
+
+        <li><a href="hw3.html">Homework 3</a>
+          <ul>
+            <li><a href="hw3_part1.html">Part 1</a></li>
+            <li><a href="hw3_part2.html">Part 2</a></li>
+            <li><a href="hw3_part3.html">Part 3</a></li>
+            <li><a href="hw3_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </li>
+
+        <li><a href="hw4.html">Homework 4</a>
+          <ul>
+            <li><a href="hw4_part1.html">Part 1</a></li>
+            <li><a href="hw4_part2.html">Part 2</a></li>
+            <li><a href="hw4_extra_credit.html">Extra Credit</a></li>
+          </ul>
+        </li>
+
+       
+    </ul>
+  </div>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+   
+    
+    <section id="content">
+    
+    <form name="myform">
+    <p class="main"><b>Customize the font and background:</b></p>
+    <br>
+    
+    <!-- selecting the second option will execute the function selectFontSize()
+    and pass the second element whose value is small to the function's variable of
+    selectedFontSize, which gets is linked to the select id of fontSizeDropDown 
+    Then if the selectedFontSize has the value of small then the table class of originalTable
+    is set to the style of small basicTable.
+    -->
+    
+    <table class="basicTable" id="originalTable">
+    <tr>
+    <!-- clicking the first radio button will execute the function switchStyle
+    and pass the first element in the radio button array, i.e., 0 to the function -->
+    
+    <td>
+    Background: <br>
+    <input type="radio" name="style" onclick="switchStyle(0)">Purple
+    </td>    
+    <!-- clicking the second radio button will execute the function switchStyle
+    and pass the second element in the radio button array, i.e., 1 to the function -->
+    
+    <td>
+    Background:<br>
+    <input type="radio" name="style" onclick="switchStyle(1)">Yellow
+    </td>
+    
+    <td>
+    Background:  <br>
+    <input type="radio" name="style" onclick="switchStyle(2)">Orange
+    </td>
+    
+    <td>
+    Background:  <br>
+    <input type="radio" name="style" onclick="switchStyle(3)">Red
+    </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        Choose font style:<br>
+        <input type="checkbox" name="fstyle" onclick="switchFontStyle(0)">
+        <label for="fstyle"> Italic</label><br>
+        <input type="checkbox" name="fstyle" onclick="switchFontStyle(1)">
+        <label for="fstyle"> Normal</label><br>
+        <!--<input type="radio" name="fstyle" onclick="switchFontStyle(0)">Italic
+        <input type="radio" name="fstyle" onclick="switchFontStyle(1)">Normal
+        -->
+    </td>
+        
+        <td colspan="2">
+        Choose font weight: <br>
+        <input type="checkbox" name="fweight" onclick="switchFontWeight(0)">
+        <label for="fweight"> Bold</label><br>
+        <input type="checkbox" name="fweight" onclick="switchFontWeight(1)">
+        <label for="fweight"> Normal</label><br>
+        <!--
+        <input type="radio" name="fweight" onclick="switchFontWeight(0)">Bold
+        <input type="radio" name="fweight" onclick="switchFontWeight(1)">Normal
+        -->
+        </td>
+        </tr>  
+        <tr>
+            <td colspan="2">
+            Choose font style:<br>
+            <select name="fontSize" id="fontSize" onchange="selectFontSize()">
+                <option  value="#">--Select font size--</option> 
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+              <br><br>
+              
+           
+        </td>
+            
+           <td colspan="2">
+            Choose font style:<br>
+            <select name="fontWeight" id="fontWeight" onchange="selectFontFamily()">
+                <option  value="#">--Select font Family--</option> 
+                <option value="impactFont">Impact</option>
+                <option value="arialFont">Arial</option>
+                <option value="georgiaFont">Georgia</option>
+              </select>
+              <br><br>
+           </td>
+        
+            </tr>  
+</table>
+</form>
+
+<br>
+     
+</section>
+</body>
+</html>    

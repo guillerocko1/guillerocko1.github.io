@@ -1,0 +1,112 @@
+body {
+  background-color: #63aef5af;
+  color: #6ea3e7;
+}
+
+p {
+  text-align: center;
+  font-family: Georgia;
+  font-size: 18px;
+}
+p.main {
+  text-align: left;
+  font-family: Georgia;
+  font-size: 15px;
+  color: #3300cc;
+}
+h2 {
+  text-align: center;
+  font: 35px Georgia;
+  color: #fafafa;
+}
+#content {
+  width: 425px;
+  margin: 0px auto;
+  padding: 50px;
+  text-align: left;
+  background-color: #598af3;
+  border-style: solid;
+  border-width: 2px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  padding: 5px;
+  background-color: #99ccff;
+  color: black;
+}
+td {
+  padding: 5px;
+  background-color: #c8c8c8;
+  color: #000099;
+}
+
+.georgiaFont {
+  background-color: #ccccff;
+  font-family: Georgia;
+  color: #0000cc;
+}
+
+.originalBody {
+  background-color: #ccccff;
+  font-family: Georgia;
+  color: #0000cc;
+}
+
+.impactFont {
+  font-family: Impact;
+}
+
+.arialFont {
+  font-family: Arial;
+}
+#originalTable td {
+  text-align: center;
+}
+.purple {
+  background-color: #9900ff;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.orange {
+  background-color: #ff9900;
+}
+.red {
+  background-color: #cc0000;
+}
+.italic {
+  font-style: italic;
+}
+.normal {
+  font-style: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.normal {
+  font-weight: normal;
+}
+
+.small {
+  font-size: 10px;
+}
+.medium {
+  font-size: 14px;
+}
+.large {
+  font-size: 18px;
+}
+
+.originalBody {
+  background-color: #ccccff;
+  font-family: Georgia;
+  color: #0000cc;
+}
+.arialFont {
+  font-family: Arial;
+}
