@@ -35,14 +35,14 @@
     <script>
       
         $(document).ready(function() {
-        $('.answer').hide();
-        $('.main h5').toggle(
+        $('.content_5 .main .answer').hide();
+        $('.content_5 .main h5').toggle(
         function() {
         $(this).next('.answer').slideDown();
         $(this).addClass('close');
         },
         function() {
-        $(this).next('.answer').fadeOut();
+        $(this).next('.content_5 .main .answer').fadeOut();
         $(this).removeClass('close');
         }
         ); // end toggle
@@ -60,6 +60,7 @@
           <ul>
             <li><a href="hw1.html">Home</a></li>
             <li><a href="hw7_part1.html">Part 1</a></li>
+            <li><a href="hw7_part2.html">Part 2</a></li>
             
           </ul>
         </div>
