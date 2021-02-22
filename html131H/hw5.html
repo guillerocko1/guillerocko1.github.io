@@ -3,18 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <title>HTML Styles - CSS</title>
-    <meta name="description" content="Concepts about HTML5 and CSS">
+    <meta name="description" content="Using inline CSS in web pages">
+
+   <!-- **************** JavaScript effect ***************************** -->
+
+    <link rel="stylesheet" type="text/css" href="fallingtextrotator.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:400,700,900' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="jquery.lettering-0.6.1.min.js"></script>
+
+    <script src="fallingtextrotator.js">
+
+/* =====================================
+	Falling Text Rotator- by JavaScript Kit (www.javascriptkit.com)
+ Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+===================================== */
+
+    </script>
+
+    <script>
+
+
+    jQuery(function(){ // on DOM load
+
+        $('#headline').fallingtextrotator({
+            pause: 3000,
+            cycles: 2,
+            ontextchange:function(msgindex, msg, eachchar){
+                //console.log(msgindex, msg, eachchar)
+            }
+        })
+    })
+
+    </script>
+    <!-- ****************  ***************************** -->
   </head>
   <body style="background-image:url(img/back-image1.jpg); background-color:bisque;
-            background-repeat:repeat-x; font-family: Arial, Helvetica, sans-serif; ">
-    <header><h1 style="text-align: center;">The IBM Sterling B2B Integrator</h1></header>
-    <section>
+            background-repeat:repeat; font-family: Arial, Helvetica, sans-serif; ">
+    
+    <header>
+ <!-- **************** JavaScript effect ***************************** -->
+
+  <ul id="headline" class="fallingtextrotator" style="height:2em">
+    <li>Homework 5</li>
+    <li>JavaScript Effect</li>
+    <li>Cut & Paste Falling Text Rotator</li>
+    <li>HTML & CSS class / Spring 21</li>
+    </ul>
+   
+ <!-- ********************************************* -->
+</header>
+<section id id="effect">
+ <h1 style="text-align: center; font-size: 40px;">The IBM Sterling B2B Integrator</h1>
+    <h1>The Falling Text Rotator Effect</h1>
+    <p>I chose the The Falling Text Rotator Effect which a nice effect dropping the letters randomly, each piece of content <br>
+        using a unordered list and it works very well using just a few lines.
+    </p>
+    <h2>what the script does?</h2>
+    <p>
+        First of all, it is necessary to add the reference to the files on the heading section, to make a reference to libraries and <br>
+        also to the files that create the effects. Those tiles set the style, font, effects. <br>
+        Those files are:  fallingtextrotator.css, jquery.lettering-0.6.1.min.js, fallingtextrotator.js. <br>
+        Once the reference to the flies and libraries is made, the JQuery function is called to create the effect.
+
+    </p>
+</section>
+    <section id="paragraph">
     <h2 style="font-style: italic; text-align: right;">User Interface (UI)</h2>
     <p><span style="font-size: 40px;">T</span>he IBM Sterling B2B Integrator user interface (UI) is designed to simplify the navigation between <br>
         the functional areas of the system. Throughout the user interface, navigation aids such as  <br>
         the Back and Next buttons, menu organization, and task flow are consistent, enabling you to confidently  <br>
         and quickly complete your activities.
-      <br><br>
+      <br>
       <span style="font-size: 40px;">T</span>he system provides access to files, business processes, Web templates, services, and product features according to <br>
        permissions assigned to your user account by the system administrator. Thus, the activities that you can perform  <br>
         and the sections of the UI you have access to depend on the permissions assigned. In general, however, the UI  <br>
